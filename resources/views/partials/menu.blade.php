@@ -84,12 +84,13 @@
             </a>
         </li>
         @endcan
+         
         @can('loan_application_access')
-        <li class="menu-item {{ request()->is('admin/loan-applications') || request()->is('admin/loan-applications/*') ? 'active' : '' }}">
-            <a href="{{ route("admin.loan-applications.index") }}" class="menu-link ">
+        <li class="menu-item {{ request()->is('admin/buses') || request()->is('admin/buses/*') ? 'active' : '' }}">
+            <a href="{{ route("admin.buses.index") }}" class="menu-link ">
                 <i class="menu-icon tf-icons bx bx-notepad"></i>
 
-                <div data-i18n="Analytics"> Seat booking</div>
+                <div data-i18n="Analytics"> Buses</div>
             </a>
         </li>
         @endcan
